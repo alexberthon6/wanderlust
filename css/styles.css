@@ -14,16 +14,18 @@ p, span, a, ul, li, button {
 	line-height: inherit;
 }
 
-strong {
-	font-weight: 600;
+a{
+	color:white;
 }
+
+a:hover {
+  text-decoration: none;
+	color: white;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;	
-}
-
-strong {
-  font-weight: 400;
 }
 
 /*--------------- end general --------------- */
@@ -32,12 +34,110 @@ strong {
 
 .navbar{
 	color:white;
+	font-size:12px;
+	letter-spacing: 1px;
 	font-weight: 600;
 	max-height:80px;
+	height:100px;
+	vertical-align: middle;
+}
+
+#nav-header-brand{
+	position:absolute;
+	left:50%;
+}
+
+.navbar-brand{
+	position: relative;
+	left:-50%;
+	margin-right:0px;
 }
 
 #logo{
 	max-height:60px;
+}
+
+#palm-tree-container{
+	max-height:60px;
+	float: left;
+}
+
+#tree-trunk, #tree-top{
+	height:30px;
+}
+
+#tree-trunk{
+	position:absolute;
+	bottom:20px;
+	right:138px;
+}
+
+#tree-top{
+	position: absolute;
+	top:12px;
+	right:130px;
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-8deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(8deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.sliding-right {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+ 
+.sliding-right:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+ 
+.sliding-right:hover:after {
+    width: 100%;
+    background: #FF00FF;
+}
+
+#contact.sliding-right:hover:after {
+    width: 100%;
+    background: #00FFFF;
+}
+
+.sliding-left {
+		display: inline-block;
+}
+.sliding-left:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 0;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+}
+.sliding-left:hover:after {
+		width: 100%;
+		background: #FF00FF;
 }
 
 /*--------------- end navbar --------------- */
@@ -63,14 +163,6 @@ strong {
 	overflow: hidden;
 }
 
-.no-padding-right{
-	padding-right:0px !important;
-}
-
-.no-padding-left{
-	padding-left:0px !important;
-}
-
 .photo{
 	transition: transform .5s ease-in-out;
 }
@@ -85,10 +177,14 @@ strong {
 }
 
 .dash{
-	height: 5px;
+	margin-left:10px;
+	margin-right: 10px;
+	height: 4px;
 	width:30px;
 	background-color: #00FFFF;
 	display: inline-block;
+	vertical-align: middle;
+	transition: background-color .2s ease-in-out;
 }
 
 
@@ -118,7 +214,7 @@ strong {
 
 #events.tile .title{
 	position:absolute;
-	top:5%;
+	top:10%;
 	left:10%;
 }
 
@@ -131,6 +227,10 @@ strong {
 #address.tile{
 	background-color: #C420AA;
 }
+
+/*--------------- end tiles --------------- */
+
+/*--------------- weather tile --------------- */
 
 #social{
 	text-align: center;
@@ -175,5 +275,43 @@ strong {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+/*--------------- end weather tile --------------- */
 
-/*--------------- end tiles --------------- */
+
+#address-text{
+	text-align: center;
+	font-weight:100;
+	font-size:18px;
+	letter-spacing: 1px;
+	color:white;
+	font-weight: 600;
+	position: absolute;
+	top:48%;
+	width:80%;
+	left:10%;
+}
+
+#marker-container{
+	position: absolute;
+	top:25%;
+	left:50%;
+}
+
+#marker{
+	position: relative;
+	left:-50%;
+	animation: float 5s linear infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

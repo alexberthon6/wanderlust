@@ -8,69 +8,92 @@
 <nav class="navbar navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header pull-left">
-			<a class="" href="#">ENG</a>
+			<a class="sliding-left" href="#">ENG</a>
 			&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp
-			<a class="" href="#">FR</a>
+			<a class="sliding-right" href="#">FR</a>
 		</div>
-		<div class="navbar-header">
+		<div id="nav-header-brand" class="navbar-header">
     	<a class="navbar-brand" href="#">
 				<img id="logo" class="img-fluid" src="img/logo.png" alt="">
 			</a>
   	</div>
 		<div class="navbar-header pull-right">
-			<a class="" href="#">CONTACT</a>
+			<div id="palm-tree-container">
+				<img id="tree-trunk" class="img-fluid" src="img/home/picto/palm_tree_trunk.png" alt="">
+				<img id="tree-top" class="img-fluid" src="img/home/picto/palm_tree_top.png" alt="">
+			</div>
+			<a id="contact" class="sliding-right" href="#">CONTACT</a>
 		</div>
 	</div>
 </nav>
 	
 <div class="container">
-  <div class="row" style="padding-top: 2px;">
-    <div class="col no-padding-left">
+  <div class="row" style="padding-top:2px">
+    <div class="col" style="padding-left:0px !important;">
       <div id="restaurant" class="tile hover" data-scale="1.03" data-image="img/home/1.jpg">
         <div class="title">
 					RESTAURANT
-					<div class="dash">
-					</div>
+					<div class="dash"></div>
 				</div>
       </div>
     </div>
     <div class="col">
       <div id="activities" class="tile hover" data-scale="1.03" data-image="img/home/2.jpg">
-        <h3 class="title">ACTIVITÉS</h3>
+				<div class="title">
+					ACTIVITÉS
+					<div class="dash"></div>
+				</div>
       </div>
     </div>
     <div class="col">
       <div id="news" class="tile hover" data-scale="1.03" data-image="img/home/3.jpg">
-        <h3 class="title">NEWS</h3>
+				<div class="title">
+					NEWS
+					<div class="dash"></div>
+				</div>
       </div>
     </div>
     <div class="col no-padding-right">
       <div id="shop" class="tile hover" data-scale="1.03" data-image="img/home/4.jpg">
-        <h3 class="title">BOUTIQUE</h3>
+				<div class="title">
+					BOUTIQUE
+					<div class="dash"></div>
+				</div>
       </div>
     </div>
   </div>
-	  <div class="row" style="padding-bottom: 2px;">
-    <div class="col no-padding-left">
+	  <div class="row" style="">
+    <div class="col" style="padding-left:0px !important;padding-bottom:0px !important;">
       <div id="address" class="tile">
-        <h3 class="title">
-					QUAI DU FAUBOURG<br>
-					75009, PARIS<br>
-					0760652001
-				</h3>
+					
+					<div id="marker-container">
+						<img id="marker" class="img-fluid" src="img/home/picto/marker.png" alt="">
+					</div>
+					<div id="address-text">
+						QUAI DU FAUBOURG<br>
+						75009, PARIS<br><br>
+						<span style="font-size:16px">0760652001</span>
+					</div>
+					
       </div>
     </div>
-    <div class="col">
+    <div class="col" style="padding-bottom:0px !important;">
       <div id="events" class="tile hover" data-scale="1.03" data-image="img/home/5.jpg">
-        <h3 class="title">ÉVÉNEMENTS</h3>
+				<div class="title">
+					ÉVÉNEMENTS
+					<div class="dash"></div>
+				</div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" style="padding-bottom:0px !important;">
       <div id="about" class="tile hover" data-scale="1.03" data-image="img/home/6.jpg">
-        <h3 class="title">À PROPOS</h3>
+				<div class="title">
+					<div class="dash"></div>
+					À PROPOS
+				</div>
       </div>
     </div>
-    <div class="col no-padding-right">
+    <div class="col" style="padding-bottom:0px !important; padding-right:0px !important">
       <div id="infos" class="tile">
         <div id="social">
 					<img id="fb" class="img-fluid" style="float: left;" src="img/home/picto/fb.jpg" alt="">
