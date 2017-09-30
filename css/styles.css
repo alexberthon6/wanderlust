@@ -1,0 +1,179 @@
+/*--------------- general --------------- */
+
+body {
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	background-color: black;
+}
+
+p, span, a, ul, li, button {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+strong {
+	font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;	
+}
+
+strong {
+  font-weight: 400;
+}
+
+/*--------------- end general --------------- */
+
+/*--------------- navbar --------------- */
+
+.navbar{
+	color:white;
+	font-weight: 600;
+	max-height:80px;
+}
+
+#logo{
+	max-height:60px;
+}
+
+/*--------------- end navbar --------------- */
+
+/*--------------- tiles --------------- */
+
+.row{
+	background-color: white;
+}
+
+.col{
+	margin:0px !important;
+	padding:4px !important;
+	background-color: white;
+}
+
+.tile {  
+  width: 100%;
+	height:calc(50vh - 50px);
+	display: inline-block;
+	box-sizing: border-box;
+	margin:0px;
+	overflow: hidden;
+}
+
+.no-padding-right{
+	padding-right:0px !important;
+}
+
+.no-padding-left{
+	padding-left:0px !important;
+}
+
+.photo{
+	transition: transform .5s ease-in-out;
+}
+
+.title {
+	margin-top: 0px;
+	color:white;
+	font-size:16px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	z-index: 10;
+}
+
+.dash{
+	height: 5px;
+	width:30px;
+	background-color: #00FFFF;
+	display: inline-block;
+}
+
+
+#restaurant.tile .title{
+	position:absolute;
+	bottom:15%;
+	left:10%;
+}
+
+#activities.tile .title{
+	position:absolute;
+	top:5%;
+	left:10%;
+}
+
+#news.tile .title{
+	position:absolute;
+	bottom:25%;
+	left:10%;
+}
+
+#shop.tile .title{
+	position:absolute;
+	top:5%;
+	left:10%;
+}
+
+#events.tile .title{
+	position:absolute;
+	top:5%;
+	left:10%;
+}
+
+#about.tile .title{
+	position:absolute;
+	top:25%;
+	right:10%;
+}
+
+#address.tile{
+	background-color: #C420AA;
+}
+
+#social{
+	text-align: center;
+	
+}
+
+#social img{
+	width:calc(33% - 4px);
+	display: inline-block;
+	background-color:black;
+	padding:10px;
+}
+
+#weather{
+	background-color: black;
+	margin-top:8px;
+	height:100%;
+	text-align: center;
+}
+
+#weather-text{
+	color:white;
+	font-weight: 600;
+	position: absolute;
+	top:58%;
+	width:60%;
+	left:21%;
+}
+
+#sun-container{
+	position: absolute;
+	top:35%;
+	left:50%;
+}
+
+#sun{
+	position: relative;
+	left:-50%;
+	animation: spin 60s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+/*--------------- end tiles --------------- */
