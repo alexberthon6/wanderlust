@@ -2,12 +2,16 @@
     
     $(document).ready(function(){
     //$(this).scrollTop(0);
+			$('.carousel').carousel({
+  			interval: 5000
+			});
+			$('#loader').addClass('loaded');
     });  
     
     "use strict";
   
     //Zoom on hover
-    $('.tile.hover')
+    $('.hover')
     // tile mouse actions
     .on('mouseover', function(){
       $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});

@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size:12px;
 	letter-spacing: 1px;
 	font-weight: 600;
+	max-height:80px;
 	height:100px;
 	vertical-align: middle;
 }
@@ -165,23 +166,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------- tiles --------------- */
 
-.container{
-	padding-left: 8%;
-	padding-right: 8%;
-}
-
-#tiles-container>.row{
+.row{
 	background-color: white;
 }
 
 .col{
 	margin:0px !important;
 	padding:4px !important;
+	background-color: white;
 }
 
 .tile {  
   width: 100%;
-	height:calc(50vh - 60px);
+	height:calc(50vh - 50px);
 	display: inline-block;
 	box-sizing: border-box;
 	margin:0px;
@@ -303,7 +300,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*--------------- end weather tile --------------- */
 
-/*--------------- address tile ------------------- */
 
 #address-text{
 	text-align: center;
@@ -341,125 +337,3 @@ h1, h2, h3, h4, h5, h6 {
 		transform: translatey(0px);
 	}
 }
-
-/*--------------- end address tile --------------- */
-
-/*------------------ carousel 1 ------------------ */
-
-#carousel1 .carousel-item img{
-	height: 100%;
-	object-fit: cover;
-}
-
-.fill{
-	width:100%;
-	height:calc(100% - 100px);
-	background-position:center;
-	background-size:cover;
-}
-
-/* keep full widget on smaller screens */
-@media (max-width: 767px) { 
-	body {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-/*---------------- end carousel 1 ---------------- */
-
-/*------------------ carousel 2 --------------- */
-
-#carousel2{
-	height:100vh;
-}
-
-#carousel2 .col{
-	padding-top:0px !important;
-	padding-bottom:0px !important;
-}
-
-#carousel2 .carousel-item img{
-	height: 100%;
-	object-fit: cover;
-}
-
-#carousel2-col-left{
-	height:100%;
-	background-image: url('/img/events/5.jpg');
-	background-size: cover;
-}
-
-.photo-container{
-	padding-top:4px;
-	padding-bottom:4px;
-	height:calc(100vh / 3);
-}
-
-.photo{
-	width:100%;
-	display: inline-block;
-	box-sizing: border-box;
-	margin:0px;
-	overflow: hidden;
-}
-
-.carousel-indicators{
-	display: block;
-	position:absolute;
-	top:0;
-	bottom:0;
-	margin:auto;
-	height:20px;
-	right:-40px;
-	left:auto;
-	width:auto;
-}
-.carousel-indicators li{
-	display:block; 
-	margin-bottom:10px;
-	border:1px solid white;
-	height:20px;
-	width:20px;
-	border-radius: 100%;
-	background:black;
-	cursor: pointer;
-	cursor: hand;
-}
-.carousel-indicators li.active{
-	background:white;
-}
-
-
-.vert #item1.carousel-item-next.carousel-item-left,
-.vert #item1.carousel-item-prev.carousel-item-right,
-.vert #item2.carousel-item-next.carousel-item-left,
-.vert #item2.carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.vert #item1.carousel-item-next,
-.vert #item1.active.carousel-item-right {
-    -webkit-transform: translate3d(0,-100%, 0);
-            transform: translate3d(0,-100% 0);
-}
-
-.vert #item1.carousel-item-prev,
-.vert #item1.active.carousel-item-left {
--webkit-transform: translate3d(0,-100%, 0);
-        transform: translate3d(0,-100%, 0);
-}
-
-.vert #item2.carousel-item-next,
-.vert #item2.active.carousel-item-right {
-    -webkit-transform: translate3d(0,100%, 0);
-            transform: translate3d(0,100% 0);
-}
-
-.vert #item2.carousel-item-prev,
-.vert #item2.active.carousel-item-left {
--webkit-transform: translate3d(0,100%, 0);
-        transform: translate3d(0,100%, 0);
-}
-
-/*---------------- end carousel 2 ------------- */
