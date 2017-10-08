@@ -38,8 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	height: 100%;
 	background: #222222;
-	z-index: 1500;
-	background-image: url('../img/loader.jpg');
+	z-index: 1000;
+	background-image: url('/img/loader.jpg');
 	background-size: cover;
 }
 
@@ -360,82 +360,6 @@ h1, h2, h3, h4, h5, h6 {
 	background-size:cover;
 }
 
-.caption-container{
-	position: absolute;
-	bottom:80px;
-	color: white;
-	width: calc(100% - 30px);
-	height:150px;
-	margin : 0 auto;
-	left: 0;
-	right: 0;
-	text-align: center;
-	letter-spacing: 2px;
-}
-
-#carousel1 #item1 .caption-container{
-	background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-  background: rgba(255, 255, 255, .1);
-}
-
-#carousel1 #item2 .caption-container{
-	background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
-  background: rgba(0, 0, 0, .3);
-}
-
-.caption-left{
-	position: relative;
-	width:50%;
-	top: 40%;
-	float: left;
-	padding-right: 4px;
-	font-size: 40px;
-}
-
-.caption-right{
-	position: relative;
-	width:50%;
-	float: right;
-	padding-left: 4px;
-	top:30%;
-	vertical-align: middle;
-}
-
-#carousel1 #item2 .caption-right{
-	top:35%;
-}
-
-.caption-title{
-	font-size: 28px;
-}
-
-.button-container{
-	position: absolute;
-	background-color: white;
-	bottom:60px;
-	right:15px;
-	height:40px;
-	width:120px;
-	text-align: center;
-	transition: all 0.5s ease-in-out;
-}
-
-.button-container .button-text{
-	color:black;
-	font-size: 12px;
-	letter-spacing: 1px;
-	line-height: 40px;
-	transition: all 0.5s ease-in-out;
-}
-
-.button-container:hover{
-	background-color: black;
-}
-
-.button-container .button-text:hover{
-	color:white;
-}
-
 /* keep full widget on smaller screens */
 @media (max-width: 767px) { 
 	body {
@@ -451,20 +375,9 @@ h1, h2, h3, h4, h5, h6 {
 	height:calc(100vh - 100px);
 }
 
-#carousel2 .carousel-inner,
-#carousel2 .carousel-item{
-	height:100%;
-	z-index: 1;
-}
-
 #carousel2 .col{
-	padding:0px !important;
-}
-
-#carousel2 .row{
 	padding-top:0px !important;
 	padding-bottom:0px !important;
-	margin:0 !important;
 }
 
 #carousel2 .carousel-item img{
@@ -472,69 +385,19 @@ h1, h2, h3, h4, h5, h6 {
 	object-fit: cover;
 }
 
-
 #carousel2-col-left{
 	height:100%;
+	background-image: url('/img/events/5.jpg');
 	background-size: cover;
-	text-align: center;
-	padding-right:4px !important;
-}
-
-#item1 #carousel2-col-left{
-	background-image: url('../img/events/5.jpg');
-}
-
-#item2 #carousel2-col-left{
-	background-image: url('../img/events/9.jpg');
-}
-
-.col-content{
-	text-align: center;
-	color: white;
-	font-weight: 600;
-}
-
-.top-text{
-	position: absolute;
-	left:0;
-	right:0;
-	margin: 0 auto;
-	top: 50px;
-	font-size: 24px;
-	transition: all .5s ease-in-out;
-}
-
-#carousel2-col-left:hover .top-text{
-	transform: scale(1.05);
-  -moz-transform: scale(1.05);
-}
-
-.top-text img{
-	height: 50px !important;
-	bottom: 40px; 
 }
 
 .middle-text{
-	position: absolute;
-	left:0;
-	right:0;
-	margin: 0 auto;
-}
-
-#item1 .middle-text{
-	top: 30%;
-}
-
-#item2 .middle-text{
-	top: 70%;
-}
-
-.bottom-text{
-	position: absolute;
-	bottom: 50px;
-	left:0;
-	right:0;
-	margin: 0 auto;
+	color:white;
+	vertical-align: middle;
+	height: 100%;
+	text-align: center;
+	margin-top: 100%;
+	font-weight: 600;
 }
 
 .photo-container{
@@ -578,18 +441,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*--Carousel fade transition--*/
-.carousel-fade .carousel-item {
-  display: block;
-  position: absolute;
-  opacity: 0;
-  transition: opacity .75s ease-in-out;
-}
-.carousel-fade .carousel-item.active {
-  opacity: 1;
-	z-index: 10 !important;
+.vert #item1.carousel-item-next.carousel-item-left,
+.vert #item1.carousel-item-prev.carousel-item-right,
+.vert #item2.carousel-item-next.carousel-item-left,
+.vert #item2.carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
 }
 
+.vert #item1.carousel-item-next,
+.vert #item1.active.carousel-item-right {
+    -webkit-transform: translate3d(0,-100%, 0);
+            transform: translate3d(0,-100% 0);
+}
 
+.vert #item1.carousel-item-prev,
+.vert #item1.active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+.vert #item2.carousel-item-next,
+.vert #item2.active.carousel-item-right {
+    -webkit-transform: translate3d(0,100%, 0);
+            transform: translate3d(0,100% 0);
+}
+
+.vert #item2.carousel-item-prev,
+.vert #item2.active.carousel-item-left {
+-webkit-transform: translate3d(0,100%, 0);
+        transform: translate3d(0,100%, 0);
+}
 
 /*---------------- end carousel 2 ------------- */
