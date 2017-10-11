@@ -254,6 +254,17 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #C420AA;
 }
 
+@media screen and (max-width: 768px) {
+	
+	#col-activities, #col-shop, #col-about, #col-other{
+		padding-right:0px !important;
+	}
+	#col-restaurant, #col-news, #col-events, #col-address{
+		padding-left:0px !important;
+	}
+	
+}
+
 /*--------------- end tiles --------------- */
 
 /*--------------- weather tile --------------- */
