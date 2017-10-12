@@ -51,6 +51,7 @@
 				.children('.photo').css({
 					'background-image': 'url('+ $(this).attr('data-image') +')',
 					'background-size': 'cover',
+					'background-position': 'center',
 					'height': 100 +'%'
 				});
     });
