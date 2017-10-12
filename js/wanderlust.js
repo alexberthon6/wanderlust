@@ -9,7 +9,25 @@
     });  
     
     "use strict";
-  
+
+/*		$('#mobile-carousel').on('slide.bs.carousel', function (ev) {
+			var id = ev.relatedTarget.id;
+			switch (id) {
+				case "item1":
+					// do something the id is 1
+					$('#night-content').fadeOut("slow");
+					$('#day-content').fadeIn(1000);
+					break;
+				case "item2":
+					// do something the id is 2
+					$('#day-content').fadeOut("slow");
+					$('#night-content').fadeIn(1000);
+					break;
+				default:
+					//the id is none of the above
+			}
+		})*/
+	
     //Zoom on hover
     $('.hover')
     // tile mouse actions

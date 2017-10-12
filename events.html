@@ -8,174 +8,309 @@
 	
 <div id="loader"></div>
 	
-<nav class="navbar fixed-top">
-	<div class="container">
-		<div class="navbar-header pull-left">
-			<a class="sliding-left" href="#">ENG</a>
-			&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp
-			<a class="sliding-right" href="#">FR</a>
-		</div>
-		<div id="nav-header-brand" class="navbar-header">
-    	<a class="navbar-brand" href="index.html">
-				<img id="logo" class="img-fluid" src="img/logo.png" alt="">
-			</a>
-  	</div>
-		<div class="navbar-header pull-right">
-			<div id="palm-tree-container">
-				<img id="tree-trunk" class="img-fluid" src="img/home/picto/palm_tree_trunk.png" alt="">
-				<img id="tree-top" class="img-fluid" src="img/home/picto/palm_tree_top.png" alt="">
-			</div>
-			<a id="contact" class="sliding-right" href="#">CONTACT</a>
-		</div>
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+	<div id="nav-logo-mobile" class="">
+		<a id="nav-logo-link-mobile" href="index.html">
+			<img id="logo-mobile" class="img-fluid" src="img/logo.png" alt="">
+		</a>
 	</div>
-</nav>
-	
-	
-<div id="carousel-container" class="container fill">
-	<div id="carousel1" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner" role="listbox">
-			<div id="item1" class="carousel-item active">
-				<img class="d-block img-fluid" src="img/events/photoslider1.jpg" alt="First slide">
-				<div class="caption-container">
-					<div class="caption-left">
-						ÉVÉNEMENTS
-					</div>
-					<div class="caption-right">
-						<span class="caption-title">TOUS LES SOIRS</span><br>
-						rejoignez-nous pour des soirées<br>
-						sur du son années 90
-					</div>
-				</div>
-				<a href="#carousel2">
-				<div class="button-container">
-					<div class="button-text">
-							EN SAVOIR PLUS
-					</div>
-				</div>
+	<a class="navbar-brand" href="#"></a>
+  <button id="toggler" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarToggler">
+
+		<div class="container">
+			
+			<ul id="mobile-links" class="navbar-nav">
+				<li class="nav-item active">
+					<a class="sliding-left" href="#">ENG</a>
+				&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp
+				<a class="sliding-right" href="#">FR</a>
+				</li>
+				<li class="nav-item">
+					<a id="contact" class="sliding-right" href="#">CONTACT</a>
+				</li>
+    	</ul>
+			
+			<div id="language-group" class="navbar-header" style="float:left">
+				<a class="sliding-left" href="#">ENG</a>
+				&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp
+				<a class="sliding-right" href="#">FR</a>
+			</div>
+			<div id="nav-header-brand" class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<img id="logo" class="img-fluid" src="img/logo.png" alt="">
 				</a>
 			</div>
-			<div id = "item2" class="carousel-item">
-				<img class="d-block img-fluid" src="img/events/photoslider2.jpg" alt="Second slide">
-				<div class="caption-container">
-					<div class="caption-left">
-						ÉVÉNEMENTS
-					</div>
-					<div class="caption-right">
-						<span class="caption-title">TOUS LES JOURS</span><br>
-						tournois sportifs organisés
-					</div>
+			<div id="contact-group" class="navbar-header" style="float:right">
+				<div id="palm-tree-container">
+					<img id="tree-trunk" class="img-fluid" src="img/home/picto/palm_tree_trunk.png" alt="">
+					<img id="tree-top" class="img-fluid" src="img/home/picto/palm_tree_top.png" alt="">
 				</div>
-				<a href="#carousel2">
+				<a id="contact" class="sliding-right" href="#">CONTACT</a>
+			</div>
+		</div>
+		
+  </div>
+</nav>
+	
+<div id="desktop-content">	
+	<div id="carousel-container" class="container fill">
+		<div id="carousel1" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div id="item1" class="carousel-item active">
+					<img class="d-block img-fluid" src="img/events/photoslider1.jpg" alt="First slide">
+					<div class="caption-container">
+						<div class="caption-left">
+							ÉVÉNEMENTS
+						</div>
+						<div class="caption-right">
+							<span class="caption-title">TOUS LES SOIRS</span><br>
+							rejoignez-nous pour des soirées<br>
+							sur du son années 90
+						</div>
+					</div>
+					<a href="#carousel2">
 					<div class="button-container">
 						<div class="button-text">
 								EN SAVOIR PLUS
 						</div>
 					</div>
-				</a>
+					</a>
+				</div>
+				<div id = "item2" class="carousel-item">
+					<img class="d-block img-fluid" src="img/events/photoslider2.jpg" alt="Second slide">
+					<div class="caption-container">
+						<div class="caption-left">
+							ÉVÉNEMENTS
+						</div>
+						<div class="caption-right">
+							<span class="caption-title">TOUS LES JOURS</span><br>
+							tournois sportifs organisés
+						</div>
+					</div>
+					<a href="#carousel2">
+						<div class="button-container">
+							<div class="button-text">
+									EN SAVOIR PLUS
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
+
+
+
+
+	<div class="container">
+			<div id="carousel2" class="carousel vert carousel-fade" data-ride="carousel" data-interval="2000">
+					<ol class="carousel-indicators">
+							<li data-target="#carousel2" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel2" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner">
+							<div id="item1" class="carousel-item active">
+									<div class="row">
+										<div class="col" style="padding-right: 4px !important">
+											<div id="carousel2-col-left" class="">
+												<div class="col-content">
+													<div class="top-text">
+														<img class="" src="img/events/picto/picto%20palmier.png" alt="">
+														PROGRAMME
+														<img class="" src="img/events/picto/picto%20palmier2.png" alt="">
+														<br>
+														NUIT 2017
+													</div>
+													<div class="middle-text">
+														LUNDI 1ER AOÛT  : RUN DMC PARTY<br>
+														MARDI 2 AOÛT : 2PAC PARTY<br>
+														MERCREDI 3 AOÛT : NIRVANA PARTY<br>
+														JEUDI 4 AOÛT : SPICE GIRLS PARTY<br>
+														VENDREDI 5 AOÛT : BRITNEY SPEARS<br>
+														SAMEDI 6 AOÛT : SNOOP DOG PARTY<br>
+														DIMANCHE 7 AOÛT : MADONNA PARTY<br>
+														LUNDI 8 AOÛT : TUPAC PARTY<br>
+														MARDI 9 AOÛT : NOTORIOUS BIG PARTY<br>
+													</div>
+													<div class="bottom-text">
+														DU LUNDI AU DIMANCHE A PARTIR DE 18H
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col" style="padding-left: 4px !important">
+											<div class="photo-container" style="padding-top: 0px !important">
+												<div id="" class="photo hover" data-scale="1.03" data-image="img/events/6.jpg">
+												</div>
+											</div>
+											<div class="photo-container">
+												<div id="" class="photo hover" data-scale="1.03" data-image="img/events/7.jpg">
+												</div>
+											</div>
+											<div class="photo-container" style="padding-bottom: 0px !important">
+												<div id="" class="photo hover" data-scale="1.03" data-image="img/events/8.jpg">
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div id="item2" class="carousel-item">
+									<div class="row">
+										<div class="col" style="padding-right: 4px !important">
+											<div id="carousel2-col-left" class="">
+												<div class="col-content">
+													<div class="top-text">
+														<img class="" src="img/events/picto/picto%20palmier.png" alt="">
+														PROGRAMME
+														<img class="" src="img/events/picto/picto%20palmier2.png" alt="">
+														<br>
+														JOUR 2017
+													</div>
+													<div class="middle-text">
+														TOURNOI BASKET - 1ER AOÛT<br>
+														ROLLERDERBY DAY - 2 AOÛT<br>
+														TOURNOI BASKET - 3 AOÛT<br>
+														SKATE DAYPARTY - 4 AOÛT<br>
+													</div>
+													<div class="bottom-text">
+														DU LUNDI AU DIMANCHE A PARTIR DE 10H
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col" style="padding-left: 4px !important">
+											<div class="photo-container" style="padding-top: 0px !important">
+												<div id="" class="photo hover" data-scale="1.03" data-image="img/events/10.jpg">
+												</div>
+											</div>
+											<div class="photo-container">
+												<div id="" class="photo hover" data-scale="1.03" data-image="img/events/11.jpg">
+												</div>
+											</div>
+											<div class="photo-container" style="padding-bottom: 0px !important">
+												<div id="" class="photo hover" data-scale="1.03" data-image="img/events/12.jpg">
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+					</div>
+			</div>
+	</div>
 </div>
-
 	
-
 	
-<div class="container">
-    <div id="carousel2" class="carousel vert carousel-fade" data-ride="carousel" data-interval="2000">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel2" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div id="item1" class="carousel-item active">
-								<div class="row">
-									<div class="col" style="padding-right: 4px !important">
-										<div id="carousel2-col-left" class="">
-											<div class="col-content">
-												<div class="top-text">
-													<img class="" src="img/events/picto/picto%20palmier.png" alt="">
-													PROGRAMME
-													<img class="" src="img/events/picto/picto%20palmier2.png" alt="">
-													<br>
-													NUIT 2017
-												</div>
-												<div class="middle-text">
-													LUNDI 1ER AOÛT  : RUN DMC PARTY<br>
-													MARDI 2 AOÛT : 2PAC PARTY<br>
-													MERCREDI 3 AOÛT : NIRVANA PARTY<br>
-													JEUDI 4 AOÛT : SPICE GIRLS PARTY<br>
-													VENDREDI 5 AOÛT : BRITNEY SPEARS<br>
-													SAMEDI 6 AOÛT : SNOOP DOG PARTY<br>
-													DIMANCHE 7 AOÛT : MADONNA PARTY<br>
-													LUNDI 8 AOÛT : TUPAC PARTY<br>
-													MARDI 9 AOÛT : NOTORIOUS BIG PARTY<br>
-												</div>
-												<div class="bottom-text">
-													DU LUNDI AU DIMANCHE A PARTIR DE 18H
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col" style="padding-left: 4px !important">
-										<div class="photo-container" style="padding-top: 0px !important">
-											<div id="" class="photo hover" data-scale="1.03" data-image="img/events/6.jpg">
-											</div>
-										</div>
-										<div class="photo-container">
-											<div id="" class="photo hover" data-scale="1.03" data-image="img/events/7.jpg">
-											</div>
-										</div>
-										<div class="photo-container" style="padding-bottom: 0px !important">
-											<div id="" class="photo hover" data-scale="1.03" data-image="img/events/8.jpg">
-											</div>
-										</div>
-									</div>
-								</div>
-            </div>
-            <div id="item2" class="carousel-item">
-                <div class="row">
-									<div class="col" style="padding-right: 4px !important">
-										<div id="carousel2-col-left" class="">
-											<div class="col-content">
-												<div class="top-text">
-													<img class="" src="img/events/picto/picto%20palmier.png" alt="">
-													PROGRAMME
-													<img class="" src="img/events/picto/picto%20palmier2.png" alt="">
-													<br>
-													JOUR 2017
-												</div>
-												<div class="middle-text">
-													TOURNOI BASKET - 1ER AOÛT<br>
-													ROLLERDERBY DAY - 2 AOÛT<br>
-													TOURNOI BASKET - 3 AOÛT<br>
-													SKATE DAYPARTY - 4 AOÛT<br>
-												</div>
-												<div class="bottom-text">
-													DU LUNDI AU DIMANCHE A PARTIR DE 10H
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col" style="padding-left: 4px !important">
-										<div class="photo-container" style="padding-top: 0px !important">
-											<div id="" class="photo hover" data-scale="1.03" data-image="img/events/10.jpg">
-											</div>
-										</div>
-										<div class="photo-container">
-											<div id="" class="photo hover" data-scale="1.03" data-image="img/events/11.jpg">
-											</div>
-										</div>
-										<div class="photo-container" style="padding-bottom: 0px !important">
-											<div id="" class="photo hover" data-scale="1.03" data-image="img/events/12.jpg">
-											</div>
-										</div>
-									</div>
-								</div>
-            </div>
-        </div>
-    </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<div id="mobile-content">
+	<div id="carousel-container" class="container fill">
+		
+		<div id="mobile-carousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				
+				
+				<div id="item1" class="carousel-item active">
+						<img class="d-block img-fluid" src="img/events/photoslider1.jpg" alt="First slide">
+						<div class="caption-left-mobile">
+								ÉVÉNEMENTS
+						</div>
+						<div class="caption-right-mobile">
+								TOUS LES SOIRS<br>
+								rejoignez-nous pour des soirées<br>
+								sur du son années 90
+						</div>
+					
+				</div>
+				<div id="item2" class="carousel-item">
+					<img class="d-block img-fluid" src="img/events/photoslider2.jpg" alt="First slide">
+						<div class="caption-left-mobile">
+								ÉVÉNEMENTS
+						</div>
+						<div class="caption-right-mobile">
+								TOUS LES JOURS<br>
+								tournois sportifs organisés
+						</div>
+				</div>
+			</div>
+
+			<a class="carousel-control-prev" href="#mobile-carousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#mobile-carousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		
+		
+		<div id="night-content">
+			<div class="part-1">
+				<img id="" class="img-fluid" src="img/events/5.jpg" alt="">
+				<div class="title-mobile">
+					<img class="" src="img/events/picto/picto%20palmier.png" alt="">
+					PROGRAMME
+					<img class="" src="img/events/picto/picto%20palmier2.png" alt="">
+					<br>
+					NUIT 2017
+				</div>
+				<div class="text-mobile">
+					LUNDI 1ER AOÛT  : RUN DMC PARTY<br>
+					MARDI 2 AOÛT : 2PAC PARTY<br>
+					MERCREDI 3 AOÛT : NIRVANA PARTY<br>
+					JEUDI 4 AOÛT : SPICE GIRLS PARTY<br>
+					VENDREDI 5 AOÛT : BRITNEY SPEARS<br>
+					SAMEDI 6 AOÛT : SNOOP DOG PARTY<br>
+					DIMANCHE 7 AOÛT : MADONNA PARTY<br>
+					LUNDI 8 AOÛT : TUPAC PARTY<br>
+					MARDI 9 AOÛT : NOTORIOUS BIG PARTY<br>
+				</div>
+			</div>
+			<div class="part-2">
+				<img id="" class="img-fluid" src="img/events/6.jpg" alt="">
+				<img id="" class="img-fluid" src="img/events/7.jpg" alt="">
+				<img id="" class="img-fluid" src="img/events/8.jpg" alt="">
+			</div>
+		</div>
+		
+		<div id="day-content">
+			<div class="part-1">
+				<img id="" class="img-fluid" src="img/events/9.jpg" alt="">
+				<div class="title-mobile">
+					<img class="" src="img/events/picto/picto%20palmier.png" alt="">
+					PROGRAMME
+					<img class="" src="img/events/picto/picto%20palmier2.png" alt="">
+					<br>
+					JOUR 2017
+				</div>
+				<div class="text-mobile">
+					TOURNOI BASKET - 1ER AOÛT<br>
+					ROLLERDERBY DAY - 2 AOÛT<br>
+					TOURNOI BASKET - 3 AOÛT<br>
+					SKATE DAYPARTY - 4 AOÛT<br>
+				</div>
+			</div>
+			<div class="part-2">
+				<img id="" class="img-fluid" src="img/events/10.jpg" alt="">
+				<img id="" class="img-fluid" src="img/events/11.jpg" alt="">
+				<img id="" class="img-fluid" src="img/events/12.jpg" alt="">
+			</div>
+		</div>
+		
+		
+	</div>
 </div>
-
 	
 	
 	
@@ -184,11 +319,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/wanderlust.js"></script>
-	
-<!--<audio autoplay>
-  <source src="https://a.tumblr.com/tumblr_oat8zhArMY1u1vzz5o1.mp3" type="audio/mpeg">
-  Sucks. Your browser does not support the audio element.
-	</audio>-->
 	
 </body>
 </html>
